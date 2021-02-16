@@ -1,0 +1,364 @@
+:root {
+  --white-text: rgba(255, 255, 255, 1);
+  --black-text: rgba(33, 33, 33, 1);
+  --blue-text: rgba(33, 150, 243, 1);
+  --gray-text: rgba(117, 117, 117, 1);
+  --white-text-op60: rgba(255, 255, 255, 0.6);
+  --background-color-hero: rgba(47, 48, 58, 1);
+  --background-color-teams: rgba(245, 244, 250, 1);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+/* Шапка сайта */
+.nav,
+.site-nav,
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.site-nav li {
+  margin-left: 50px;
+}
+.contact-info li:first-child {
+  margin-right: 50px;
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+}
+.logo {
+  color: var(--black-text);
+}
+.logo .accent {
+  color: var(--blue-text);
+}
+
+.site-nav a {
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--blue-text);
+}
+.site-nav .current {
+  color: var(--blue-text);
+}
+.contact-info a {
+  color: var(--gray-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.contact-info a:hover,
+.contact-info a:focus,
+.contact-info a:active {
+  color: var(--blue-text);
+}
+
+/* Секция героя */
+.hero {
+  background-color: var(--background-color-hero);
+}
+.hero .container {
+  padding: 200px 0;
+}
+
+.hero h1 {
+  color: var(--white-text);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero button {
+  display: flex;
+  color: var(--white-text);
+  background-color: var(--blue-text);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Секция наши преимущества */
+.advant .container {
+  padding: 94px 15px;
+}
+.advant ul {
+  display: flex;
+  justify-content: center;
+}
+.advant li {
+  width: 270px;
+  margin-left: 30px;
+}
+.advant ul :first-child {
+  margin-left: 0px;
+}
+
+.advant h3 {
+  color: var(--black-text);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.advant p {
+  color: var(--gray-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.advant h2 {
+  color: var(--black-text);
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/* Секция чем занимаемся */
+.working .container {
+  padding: 0 15px 94px;
+}
+
+.working ul {
+  display: flex;
+  margin: 50px auto 0px;
+}
+
+.working li {
+  margin-left: 30px;
+}
+.working ul :first-child {
+  margin-left: 0px;
+}
+
+.working h2 {
+  color: var(--black-text);
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/* Секция наша команда */
+.team .container {
+  padding: 94px 15px;
+}
+.team ul {
+  display: flex;
+  margin-top: 50px;
+}
+.team li {
+  background-color: rgba(255, 255, 255, 1);
+  margin-left: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team li:first-child {
+  margin-left: 0;
+}
+.cart-team {
+  padding: 30px;
+}
+
+.team {
+  background-color: var(--background-color-teams);
+}
+
+.team h2 {
+  color: var(--black-text);
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.team h3 {
+  color: var(--black-text);
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.team p {
+  color: var(--gray-text);
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+/* Футер */
+.footer .container {
+  padding: 60px 15px;
+}
+
+.footer {
+  background-color: var(--background-color-hero);
+}
+
+.footer .logo {
+  color: var(--white-text);
+}
+.footer .accent {
+  color: var(--blue-text);
+}
+
+.contacts .location {
+  color: var(--white-text);
+  margin-top: 20px;
+}
+.contacts .mail,
+.contacts .tel {
+  color: var(--white-text-op60);
+  margin-top: 9px;
+}
+
+.contacts a:hover,
+.contacts a:focus,
+.contacts a:active {
+  color: var(--blue-text);
+}
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.contacts a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+}
+
+/* portfolio.html */
+.portfolio .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* Для конопок */
+.nav-examples {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav-examples button {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+  background-color: var(--background-color-teams);
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+.nav-examples li {
+  margin-left: 8px;
+}
+.nav-examples li:first-child {
+  margin-left: 0px;
+}
+
+.nav-examples button:hover,
+.nav-examples button:focus,
+.nav-examples button:active {
+  color: var(--white-text);
+  background-color: var(--blue-text);
+}
+
+/* Для карточек */
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.examples li {
+  flex-basis: calc(100% / 3 -30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  outline: 1px solid #eeeeee;
+}
+.examples-text {
+  padding: 20px 24px;
+}
+.examples-text p {
+  margin-top: 4px;
+}
+
+.examples h2 {
+  color: var(--black-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples p {
+  color: var(--gray-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
